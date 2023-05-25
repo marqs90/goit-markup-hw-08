@@ -1,0 +1,13 @@
+.logo {
+	margin-right: 93px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	color: #2196f3;
+	text-decoration: none;
+	&--upper {
+		color:#000;
+	}
+	&--lower {
+		color:#fff;
+	}
+}

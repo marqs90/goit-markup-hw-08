@@ -1,0 +1,29 @@
+.offer {
+	background-color: $firstBcgColor;
+	// &__list {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+	// 	list-style: none;
+    // }
+    &__item {
+        position: relative;
+        display: inline-block;
+        margin-right: 25px;
+    }
+    &__item > img{
+        display: block;
+    }
+    &__description {
+    position: absolute;
+	bottom: 0;
+	padding: 27px 0;
+	width: 360px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+	color: $firstBcgColor;
+	text-transform: uppercase;
+    }
+}

@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: $firstBcgColor;
+	font-family: 'Roboto', sans-serif;
+	color: $firstFontColor;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.section {
+	padding-bottom: 94px;
+	&__title {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 50px;
+		text-align: center;
+		font-size: 36px;
+	}
+}

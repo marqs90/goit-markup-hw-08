@@ -1,0 +1,22 @@
+.clients {
+	padding-top: 94px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+	}
+	&__item {
+		padding: 16px 32px;
+		border-radius: 4px;
+		border: 1px solid #afb1b8;
+	}
+	&__icon {
+		fill: #afb1b8;
+	}
+	&__item:hover {
+		border: 1px solid $thirdFontColor;
+	}
+	&__item:hover .clients__icon {
+		fill: $thirdFontColor;
+	}
+}
