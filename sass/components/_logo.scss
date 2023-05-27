@@ -10,4 +10,7 @@
 	&--lower {
 		color:#fff;
 	}
+	@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+		font-size: 24px;;
+	}
 }

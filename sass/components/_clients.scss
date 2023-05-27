@@ -3,12 +3,17 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		list-style: none;
 	}
 	&__item {
 		padding: 16px 32px;
 		border-radius: 4px;
 		border: 1px solid #afb1b8;
+		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+			// flex-basis:calc(100%-40px)/3;
+			// display: inline-block;
+		// }
 	}
 	&__icon {
 		fill: #afb1b8;

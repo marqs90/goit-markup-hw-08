@@ -1,14 +1,18 @@
 .offer {
+    display: none;
 	background-color: $firstBcgColor;
-	// &__list {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     flex-wrap: wrap;
-	// 	list-style: none;
-    // }
+    @media ( min-width: $desktopStart ) {
+        display: block;
+    }
+	&__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+		list-style: none;
+    }
+   
     &__item {
         position: relative;
-        display: inline-block;
         margin-right: 25px;
     }
     &__item > img{

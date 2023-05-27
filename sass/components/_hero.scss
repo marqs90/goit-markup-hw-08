@@ -1,22 +1,39 @@
-.hero{
+.hero {
 	display: flex;
 	flex-direction: column;
-	padding-top: 200px;
 	justify-content: center;
+	padding: 200px 0;
 	align-items: center;
-	padding-bottom: 200px;
 	text-align: center;
-    background-color: $secondBcgColor;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg.jpg);
+	background-color: $secondBcgColor;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-    &__title{
-        margin-bottom: 30px;
-        font-size: 44px;
-        font-weight: 900;
-        line-height: 60px;
-        color: $firstBcgColor;
-        text-transform: uppercase;
-        letter-spacing: 0.06em;
-    }
+	@media(min-width: $tabletStart) and (max-width: $tabletEnd) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tablet.jpg);
+		background-size: cover;
+	}
+	@media(max-width: $phoneEnd) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
+		background-size: cover;
+	}
+	
+	&__title {
+		margin-bottom: 30px;
+		font-size: 44px;
+		font-weight: 900;
+		line-height: 60px;
+		color: $firstBcgColor;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+        @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+            text-align: center;
+            font-size: 26px;
+            line-height: 1.4;
+        }
+		@media(max-width: $phoneEnd){
+			font-size: 26px;
+			line-height: 1.4;
+		}
+	}
 }

@@ -8,14 +8,26 @@
 		padding-bottom: 24px;
 		align-items: center;
 	}
+	&__mobile-menu{
+		@media(min-width:$phoneEnd){
+			display:none;
+		}	
+	}
 }
 .nav {
 	display: flex;
+	
 	&__list {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		list-style-type: none;
+		@media(max-width:$phoneEnd){
+			display:none;
+		}	
+		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+		// 	margin-left: 83px;
+		// }
 	}
 	&__item {
 		display: inline;
@@ -23,8 +35,8 @@
 	}
 	&__link:hover,
 	&__link:focus,
-	&__link:active{
-		color:$thirdFontColor;
+	&__link:active {
+		color: $thirdFontColor;
 	}
 	&__link {
 		font-size: 14px;
@@ -43,7 +55,7 @@
 		top: 43px;
 		width: 100%;
 		height: 4px;
-		background-color:$thirdFontColor;
+		background-color: $thirdFontColor;
 		border-radius: 2px;
 	}
 }
@@ -52,32 +64,44 @@
 	display: flex;
 	align-items: center;
 	list-style-type: none;
-}
-.contact__item {
-	display: inline;
-	margin-right: 50px;
-}
-.contact__item:last-child {
-	margin-right: 0;
-}
-.contact__link {
-	display: flex;
-	align-items: center;
-	font-size: 14px;
-	font-weight: 500;
-	color: $secondFontColor;
-	text-decoration: none;
-}
-.contact__link:hover,
-.contact__link:focus,
-.contact__link:active {
-	color: $thirdFontColor;
-}
+	@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+		
+	}
+	@media(max-width:$phoneEnd){
+		display:none;
+	}	
+	.contact__item {
+		display: inline;
+		margin-right: 50px;
+	}
+	.contact__item:last-child {
+		margin-right: 0;
+	}
+	.contact__link {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 500;
+		color: $secondFontColor;
+		text-decoration: none;
+		@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+			font-size: 12px;
+		}
+	}
+	.contact__link:hover,
+	.contact__link:focus,
+	.contact__link:active {
+		color: $thirdFontColor;
+	}
 
-.contact__icon {
-	margin-right: 10px;
-	fill: $secondFontColor;
-}
-.contact__link:hover svg {
-	fill: $thirdFontColor;
+	.contact__icon {
+		margin-right: 10px;
+		fill: $secondFontColor;
+	}
+	.contact__link:hover svg {
+		fill: $thirdFontColor;
+	}
 }

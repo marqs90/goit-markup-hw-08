@@ -1,25 +1,39 @@
 .team {
-	padding-top: 94px;
+	text-align: center;
+	padding: 60px 0;
 	background-color: #f5f4fa;
 	&__list {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
+		gap:30px;
 		list-style: none;
+		@media (min-width:$desktopStart){
+			flex-wrap: nowrap;
+		}
 	}
 	&__item {
-		display: block;
-		margin-right: 30px;
-		max-width: 270px;
 		background-color: $firstBcgColor;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: $defaultBorderRadius;
+		@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+			flex-basis: calc((100% - 30px) / 2);
+		}
+		@media(max-width: $phoneEnd) {
+			width: 100%;
+		}	
 	}
+
 	&__photo {
-		margin-bottom: 30px;
-	}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  }
+	
+
 	&__description {
 		padding-top: 30px;
-        text-align: center;
+		text-align: center;
 	}
 	&__person {
 		margin-bottom: 10px;
@@ -34,22 +48,22 @@
 	&__social-icons {
 		display: flex;
 		justify-content: center;
-		margin-top: 16px;
+		margin: 16px 0;
 	}
-    &__social-link{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 10px;
-	height: 44px;
-	width: 44px;
-	list-style-type: none;
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.1);
-	fill: rgba(175, 177, 184, 1);
-    }
-    &__social-link:hover{
-        fill:$firstBcgColor;
-        background-color: $thirdFontColor;
-    }
+	&__social-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		height: 44px;
+		width: 44px;
+		list-style-type: none;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.1);
+		fill: rgba(175, 177, 184, 1);
+	}
+	&__social-link:hover {
+		fill: $firstBcgColor;
+		background-color: $thirdFontColor;
+	}
 }
