@@ -1,0 +1,20 @@
+.mobile-menu.is-open {
+// transform: translateX(0);
+display: flex;
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    &__close-btn{
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        background-color: transparent;
+        border: none;
+    }
+
+}

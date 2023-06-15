@@ -1,3 +1,5 @@
+@import "./base/reset";
+
 @import "./utils/vars";
 @import "./utils/globals";
 
@@ -13,3 +15,4 @@
 @import "./components/submenu";
 @import "./components/skills";
 @import "./components/modal";
+@import "./components/mobile-menu"

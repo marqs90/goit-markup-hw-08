@@ -8,15 +8,17 @@
 		padding-bottom: 24px;
 		align-items: center;
 	}
-	&__mobile-menu{
-		@media(min-width:$phoneEnd){
-			display:none;
-		}	
+	&__mobile-menu {
+		background-color: transparent;
+		border: none;
+		display: none;
+		@media(max-width:$phoneEnd){
+			display: flex;
+		}
 	}
 }
 .nav {
 	display: flex;
-	
 	&__list {
 		display: flex;
 		align-items: center;
@@ -24,7 +26,7 @@
 		list-style-type: none;
 		@media(max-width:$phoneEnd){
 			display:none;
-		}	
+		}
 		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
 		// 	margin-left: 83px;
 		// }
@@ -64,15 +66,15 @@
 	display: flex;
 	align-items: center;
 	list-style-type: none;
-	@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 10px;
-		
-	}
+	// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+	// 	flex-direction: column;
+	// 	align-items: flex-start;
+	// 	gap: 10px;
+
+	// }
 	@media(max-width:$phoneEnd){
 		display:none;
-	}	
+	}
 	.contact__item {
 		display: inline;
 		margin-right: 50px;
@@ -87,9 +89,9 @@
 		font-weight: 500;
 		color: $secondFontColor;
 		text-decoration: none;
-		@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
-			font-size: 12px;
-		}
+		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+		// 	font-size: 12px;
+		// }
 	}
 	.contact__link:hover,
 	.contact__link:focus,
