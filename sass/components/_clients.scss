@@ -3,8 +3,13 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		gap: 15px;
 		flex-wrap: wrap;
 		list-style: none;
+		@media (max-width: $tabletEnd) {
+			gap: 30px;
+			justify-content: center;
+		}
 	}
 	&__item {
 		padding: 16px 32px;

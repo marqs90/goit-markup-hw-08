@@ -1,5 +1,4 @@
 .advantages {
-	margin-top: 94px;
 
 	&__list {
 		display: flex;
@@ -24,7 +23,6 @@
 		@media(max-width: $phoneEnd) {
 			width: 100%;
 		}
-
 
 	}
 	&__box {

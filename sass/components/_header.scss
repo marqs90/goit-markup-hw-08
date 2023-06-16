@@ -12,9 +12,13 @@
 		background-color: transparent;
 		border: none;
 		display: none;
-		@media(max-width:$phoneEnd){
+		@media (max-width: $phoneEnd) {
 			display: flex;
 		}
+		
+	}
+	&__mobile-menu svg:hover {
+		fill:$thirdFontColor;
 	}
 }
 .nav {
@@ -24,8 +28,8 @@
 		align-items: center;
 		flex-wrap: wrap;
 		list-style-type: none;
-		@media(max-width:$phoneEnd){
-			display:none;
+		@media (max-width: $phoneEnd) {
+			display: none;
 		}
 		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
 		// 	margin-left: 83px;
@@ -72,8 +76,8 @@
 	// 	gap: 10px;
 
 	// }
-	@media(max-width:$phoneEnd){
-		display:none;
+	@media (max-width: $phoneEnd) {
+		display: none;
 	}
 	.contact__item {
 		display: inline;
