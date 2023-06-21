@@ -16,6 +16,12 @@
 			flex-direction: column;
 		}
 	}
+	&__adress{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	&__address-list {
 		padding-top: 20px;
 		padding-left: 0;
@@ -43,8 +49,9 @@
 	}
 }
 .footer-socials {
-	// margin-left: 60px;
+	margin-left: 60px;
 	@media(max-width:$phoneEnd){
+		margin: 0;
 		padding: 60px 0;
 	}
 	&__title {
@@ -110,7 +117,7 @@
 	}
 	&__form-input {
 		padding: 15px 16px;
-		max-width: 358px;
+		width: 358px;
 		height: 50px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		background-color: #2f303a;
@@ -120,7 +127,7 @@
 		transition-duration: $transitionDurationDefault;
 		transition-timing-function: $transitionTimingDefault;
 		@media (max-width: $tabletEnd) {
-			width: 450px;
+			max-width: 450px;
 		}
 	}
 	&__form-input:hover,
