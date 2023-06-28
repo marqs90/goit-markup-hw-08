@@ -3,6 +3,7 @@
 
 	&__container {
 		display: flex;
+		position: relative;
 		justify-content: space-between;
 		padding-top: 24px;
 		padding-bottom: 24px;
@@ -14,11 +15,18 @@
 		display: none;
 		@media (max-width: $phoneEnd) {
 			display: flex;
+			position: absolute;
+			top: 20px;
+			right: 10px;
+			& svg {
+				transition-property: fill;
+				transition-duration: $transitionDurationDefault;
+				transition-timing-function: $transitionTimingDefault;
+			}
 		}
-		
 	}
 	&__mobile-menu svg:hover {
-		fill:$thirdFontColor;
+		fill: $thirdFontColor;
 	}
 }
 .nav {
@@ -31,9 +39,6 @@
 		@media (max-width: $phoneEnd) {
 			display: none;
 		}
-		// @media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
-		// 	margin-left: 83px;
-		// }
 	}
 	&__item {
 		display: inline;
@@ -48,6 +53,9 @@
 		font-size: 14px;
 		font-weight: 500;
 		color: $firstFontColor;
+		transition-property: color;
+		transition-duration: $transitionDurationDefault;
+		transition-timing-function: $transitionTimingDefault;
 		text-decoration: none;
 	}
 	&__link--active {
@@ -58,11 +66,14 @@
 		content: '';
 		position: absolute;
 		display: block;
-		top: 43px;
+		top: 42px;
 		width: 100%;
 		height: 4px;
 		background-color: $thirdFontColor;
 		border-radius: 2px;
+		@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
+			top: 48px;
+		}
 	}
 }
 
@@ -74,7 +85,6 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 10px;
-
 	}
 	@media (max-width: $phoneEnd) {
 		display: none;
@@ -92,6 +102,9 @@
 		font-size: 14px;
 		font-weight: 500;
 		color: $secondFontColor;
+		transition-property: color;
+		transition-duration: $transitionDurationDefault;
+		transition-timing-function: $transitionTimingDefault;
 		text-decoration: none;
 		@media screen and (min-width: $tabletStart) and (max-width: $tabletEnd) {
 			font-size: 12px;

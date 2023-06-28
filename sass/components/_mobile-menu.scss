@@ -7,7 +7,7 @@
 	position: fixed;
 	inset: 0;
 	flex-direction: column;
-	justify-content: space-between;
+	gap: 300px;
 	padding: 48px 40px;
 	width: 100vw;
 	height: 100vh;
@@ -15,8 +15,8 @@
 	background-color: white;
 	&__close-btn {
 		position: absolute;
-		top: 16px;
-		right: 16px;
+		top: 20px;
+		right: 20px;
 		background-color: transparent;
 		border: none;
 	}
@@ -44,12 +44,16 @@
 		transform: rotate(540deg);
 	}
 
+
 	&__nav-item {
-		padding: 32px 0;
+		padding-bottom: 36px;
 		font-size: 40px;
 		font-weight: 500;
 		letter-spacing: 0.02em;
 		text-align: left;
+		&:first-child {
+			padding-top: 0;
+		}
 	}
 	&__nav-link {
 		text-decoration: none;
@@ -58,10 +62,10 @@
 	&__nav-link:hover {
 		color: $thirdFontColor;
 	}
-&__contact-list{
-	padding: 32px 0;
-
-}
+	
+	&__contact-list {
+		padding-bottom: 32px;
+	}
 
 	&__contact-link {
 		font-family: Roboto;
@@ -75,7 +79,7 @@
 	}
 
 	&__contact-item {
-		padding-bottom:  32px;
+		padding-bottom: 32px;
 		&:last-child a {
 			font-size: 24px;
 			line-height: 28px;
@@ -89,16 +93,16 @@
 	&__socials-list {
 		display: flex;
 		gap: 10px;
+
 	}
 	&__socials-item {
 		border-right: 1px solid rgba(33, 33, 33, 0.2);
 		padding-right: 10px;
-		&:last-child{
+		&:last-child {
 			border: none;
 			margin-right: 10px;
 			padding: none;
 		}
-	
 	}
 	&__socials-link {
 		color: $thirdFontColor;
@@ -109,5 +113,4 @@
 		text-align: left;
 		text-decoration: none;
 	}
-
 }
