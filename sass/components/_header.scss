@@ -19,6 +19,7 @@
 			top: 20px;
 			right: 10px;
 			& svg {
+				fill:#000000;
 				transition-property: fill;
 				transition-duration: $transitionDurationDefault;
 				transition-timing-function: $transitionTimingDefault;
