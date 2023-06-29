@@ -74,8 +74,48 @@
 			background-color: $thirdFontColor;
 		}
 	}
-	&__social-link:hover {
-		fill: $firstBcgColor;
-		background-color: $thirdFontColor;
-	}
+
+	// &__social-icon{
+	// 	height: 44px;
+	// 	width: 44px;
+	// 	fill: rgba(175, 177, 184, 1);
+	// 	background-color: rgba(255, 255, 255, 0.1);
+	// 	transition-property: fill, background-color, border-radius;
+	// 	transition-duration: $transitionDurationDefault;
+	// 	transition-timing-function: $transitionTimingDefault;
+	// 	&:hover,
+	// 	&:focus,
+	// 	&:active {
+	// 		fill: $firstBcgColor;
+	// 		background-color: $thirdFontColor;
+	// 		border-radius: 50%;
+	// 		cursor: pointer;
+	// 	}
+		
+	// }
+
+	// &__social-icon {
+	// 	transition-property: fill, background-color, border-radius;
+	// 	transition-duration: 2s;
+	// 	transition-timing-function: $transitionTimingDefault;
+	// 	list-style-type: none;
+	// 	border-radius: 50%;
+	// 	background-color: rgba(255, 255, 255, 0.1);
+	// 	fill: rgba(175, 177, 184, 1);
+		// &:hover,
+		// &:focus,
+		// &:active {
+		// 	fill: $firstBcgColor;
+		// 	background-color: $thirdFontColor;
+		// 	border-radius: 50%;
+		// 	cursor: pointer;
+		// }
+	
+	// &__social-link:hover {
+	// 	fill: $firstBcgColor;
+	// }
+
+	// &__social-icon:hover{
+	// 	fill: $firstBcgColor;
+	// }
 }

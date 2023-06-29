@@ -38,6 +38,9 @@
 		margin-bottom: 10px;
 		font-size: 14px;
 		letter-spacing: 0.03em;
+		@media(max-width: $tabletEnd) {
+			font-weight: 700;
+		}
 		@media(max-width: $phoneEnd) {
 			text-align: center;
 			font-weight: 700;
